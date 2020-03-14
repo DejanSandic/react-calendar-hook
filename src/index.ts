@@ -1,9 +1,2 @@
-const log = (...args: any) => {
-   console.log(...args);
-};
-
-export const add = (a: number, b: number) => {
-   return a + b;
-};
-
-export default log;
+export { dayNames, shortDayNames, monthNames, shortMonthNames } from './consts';
+export { useCalendar } from './useCalendar';
