@@ -1,5 +1,5 @@
 {
-	"name": "calendar-hook",
+	"name": "react-calendar-hook",
 	"version": "0.0.1",
 	"description": "React hook for manipulating calendar structure",
 	"main": "dist/index.cjs.js",
@@ -19,7 +19,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/DejanSandic/calendar-hook.git"
+		"url": "git+https://github.com/DejanSandic/react-calendar-hook.git"
 	},
 	"keywords": [
 		"react",
@@ -30,9 +30,9 @@
 	"author": "Dejan Sandic - Deyo",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/DejanSandic/calendar-hook/issues"
+		"url": "https://github.com/DejanSandic/react-calendar-hook/issues"
 	},
-	"homepage": "https://github.com/DejanSandic/calendar-hook#readme",
+	"homepage": "https://github.com/DejanSandic/react-calendar-hook#readme",
 	"devDependencies": {
 		"@rollup/plugin-node-resolve": "^6.0.0",
 		"@testing-library/jest-dom": "^4.2.4",
