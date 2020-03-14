@@ -1,0 +1,18 @@
+    
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"allowJs": false,
+		"target": "es5",
+		"lib": ["dom", "es2015"],
+		"alwaysStrict": true,
+		"allowUnreachableCode": false,
+		"declaration": true,
+		"declarationDir": "dist",
+		"noImplicitAny": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"downlevelIteration":true
+	},
+	"files": ["./src/index.ts"]
+}

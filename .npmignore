@@ -1,0 +1,10 @@
+src/
+test/
+rollup.config.js
+.eslintrc.json
+jest.config.js
+.babelrc
+README.md
+tsconfig.json
+.prettierignore
+.eslintignore
