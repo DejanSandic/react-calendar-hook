@@ -1,11 +1,13 @@
 import typescript from 'rollup-plugin-typescript2';
+import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
+import commonjs from 'rollup-plugin-commonjs';
 import license from 'rollup-plugin-license';
 import path from 'path';
 
 export default {
 	input: 'src/index.ts',
-	external: [],
+	external: [ 'react' ],
 	output: [
 		{
 			file: 'dist/index.cjs.js',
@@ -22,10 +24,14 @@ export default {
 			file: 'dist/index.umd.js',
 			format: 'umd',
 			sourcemap: 'inline',
-			globals: {}
+			globals: {
+				react: 'React'
+			}
 		}
 	],
 	plugins: [
+		resolve(),
+		commonjs(),
 		typescript({ clean: true }),
 		terser({ include: [ /^.+\.umd\.js$/ ] }),
 		license({

@@ -1,7 +1,7 @@
 {
-	"name": "library-name",
+	"name": "calendar-hook",
 	"version": "0.0.1",
-	"description": "",
+	"description": "React hook for manipulating calendar structure",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.es.js",
 	"unpkg": "dist/index.umd.js",
@@ -13,20 +13,33 @@
 		"dev": "rollup --config --watch",
 		"lint:fix": "prettier-eslint \"src/*\" \"test/*\" --write"
 	},
-	"pre-commit": [ "test", "lint:fix" ],
+	"pre-commit": [
+		"test",
+		"lint:fix"
+	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/DejanSandic/[library-name].git"
+		"url": "git+https://github.com/DejanSandic/calendar-hook.git"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"react",
+		"useCalendar",
+		"calendar",
+		"hook"
+	],
+	"author": "Dejan Sandic - Deyo",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/DejanSandic/[library-name]/issues"
+		"url": "https://github.com/DejanSandic/calendar-hook/issues"
 	},
-	"homepage": "https://github.com/DejanSandic/[library-name]#readme",
+	"homepage": "https://github.com/DejanSandic/calendar-hook#readme",
 	"devDependencies": {
+		"@rollup/plugin-node-resolve": "^6.0.0",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.3.2",
+		"@types/classnames": "^2.2.9",
 		"@types/jest": "^24.0.15",
+		"@types/react": "^16.9.13",
 		"eslint": "^5.16.0",
 		"eslint-config-standard": "^12.0.0",
 		"eslint-plugin-import": "^2.17.3",
@@ -37,16 +50,21 @@
 		"pre-commit": "^1.2.2",
 		"prettier-eslint": "^9.0.0",
 		"prettier-eslint-cli": "^5.0.0",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
 		"rimraf": "^2.6.3",
 		"rollup": "^1.15.6",
 		"rollup-plugin-babel": "^4.3.2",
+		"rollup-plugin-commonjs": "^10.1.0",
 		"rollup-plugin-license": "^0.12.1",
-		"rollup-plugin-terser": "5.1.2",
+		"rollup-plugin-terser": "^5.1.3",
 		"rollup-plugin-typescript2": "^0.22.0",
 		"ts-jest": "^24.0.2",
 		"typescript": "^3.5.3"
 	},
-	"peerDependencies": {},
+	"peerDependencies": {
+		"react": "^16.12.0"
+	},
 	"engines": {
 		"node": ">=8"
 	}
