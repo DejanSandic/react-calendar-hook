@@ -1,6 +1,6 @@
 {
 	"name": "react-calendar-hook",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "React hook for manipulating calendar structure",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.es.js",
@@ -13,20 +13,12 @@
 		"dev": "rollup --config --watch",
 		"lint:fix": "prettier-eslint \"src/*\" \"test/*\" --write"
 	},
-	"pre-commit": [
-		"test",
-		"lint:fix"
-	],
+	"pre-commit": [ "test", "lint:fix" ],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/DejanSandic/react-calendar-hook.git"
 	},
-	"keywords": [
-		"react",
-		"useCalendar",
-		"calendar",
-		"hook"
-	],
+	"keywords": [ "react", "useCalendar", "calendar", "hook" ],
 	"author": "Dejan Sandic - Deyo",
 	"license": "MIT",
 	"bugs": {
