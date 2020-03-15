@@ -1,5 +1,5 @@
 # react-calendar-hook
-React helper for event emitters and socket.io
+React hook which enables you to easily create your custom calendars in a couple of minutes
 
 # Installation
 ```bash
