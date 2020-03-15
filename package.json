@@ -1,6 +1,6 @@
 {
 	"name": "react-calendar-hook",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"description": "React hook for manipulating calendar structure",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.es.js",

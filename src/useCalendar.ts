@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { monthNames, dayNames } from './consts';
 import { createCalendar, CalendarItem } from './createCalendar';
 
-interface Calendar {
+export interface Calendar {
    date: Date;
    month: {
       index: number;
